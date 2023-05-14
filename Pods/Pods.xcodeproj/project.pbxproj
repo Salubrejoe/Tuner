@@ -1,0 +1,1130 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E33A56AD4094E3DFB668CB8C888B34F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4E5EBACC9AF93212186391761BE86 /* UIKit.framework */; };
+		11D7F16C0600F38A7EF96B207E7862F0 /* BarycentricEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E1210B48D4A31E4FB7EE4C5DFC558 /* BarycentricEstimator.swift */; };
+		13F12F0E10761E4DF4431EEEEF1A0FAF /* EstimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D7FD8E9538D2BE977CED25E7FC32D /* EstimationError.swift */; };
+		164949BE174563F9CBE616047E337B53 /* YINUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023234FFBA38CC8477C2FDAC2BAE64B1 /* YINUtil.swift */; };
+		18940758DC199ABD054234809EEB7531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0575A0FAD39068C92BD30EEECD114D2 /* Foundation.framework */; };
+		1A9AA34F16281FABC0D56E35F467E06B /* LocationEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB307FD037DF15CBCC2CBE03B79208 /* LocationEstimator.swift */; };
+		4271DAA7A5DCB43B93EAB086A2373C5A /* YINEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B7A3B6E410F0D217031F0FD98BB3 /* YINEstimator.swift */; };
+		48BFACADD277CBAA1DB13C9E97D6A0C2 /* PitchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469CBF5A62441596CCFA136643A4C54 /* PitchEngine.swift */; };
+		4F50C4935977A5DDDF15959947BA21A1 /* UIImage+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A063777316EB6911BAB2A7FE35FFDD /* UIImage+Hue.swift */; };
+		4FE061CDF2D25CFA6260C3F687A92D04 /* InputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FACB8080B61D9456746E2BF9B79C /* InputSignalTracker.swift */; };
+		506B0DBF597DA7C6F062C4E2C5F145F6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECC0722DC9B657E7A568FB96BCAEF32 /* Accelerate.framework */; };
+		5685A858CB9F1729E5F92C668DD5D70F /* QuadradicEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A790E63D2990C15513F33F46273EDC3 /* QuadradicEstimator.swift */; };
+		56E9E942A25A067E3FE8E324163A02FC /* WaveCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6FC986BB4DAAAE4A26F6A6AE085185 /* WaveCalculator.swift */; };
+		5BFC9D4D2CF65605F89C763BA800C2FA /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FADDA97F1504E862F62748F8115AD70 /* Transformer.swift */; };
+		6089525E047EEA75ABBE673386C2631C /* Beethoven-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC761C14587FCEC6648932326D2973B /* Beethoven-dummy.m */; };
+		651D2FC1E817A7E9372A32E86B7E1C78 /* QuinnsFirstEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF572F61ED07481AC1B8C4689CAE758 /* QuinnsFirstEstimator.swift */; };
+		6EBDC09A0BE1E80ABCA54E192D2A6851 /* Pitchy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93682035733ED6527583E1B66728471B /* Pitchy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7395BCC2D83815DE32A17F7993019856 /* EstimationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7144E1F266C348A71B52EA5D274248 /* EstimationStrategy.swift */; };
+		7736AEDEBDCCA09194799C4C6670FE3D /* OutputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D6A5309EE3895554065CBAC62626E /* OutputSignalTracker.swift */; };
+		7B836AEF45B51DA7A045E56B4C8C9E68 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E338A4315F9C846E47B12E742F1E0 /* Note.swift */; };
+		7CE7314CFFE1AD4B860B751902708968 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1C58383387A131F3D908C609E9F8E /* Array+Extensions.swift */; };
+		7E8624DC5610FB770F183CC61F2BEF98 /* JainsEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0F2B01ED5FA4C2F46814F9131C86E /* JainsEstimator.swift */; };
+		8022D5F9DC040D6281D168DF192E0152 /* MaxValueEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02051D51224116DB58FBB221EADE0F28 /* MaxValueEstimator.swift */; };
+		86E2949FB8A4F44D98A07BF1133FB7DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0575A0FAD39068C92BD30EEECD114D2 /* Foundation.framework */; };
+		89F1A83E76B64BA81060D9147C5B69E8 /* YINTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE85FED47B110F417416554B3A7C20B /* YINTransformer.swift */; };
+		90966FE23ECF4122BBCE6A86914FD5EE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F198C773209A22F36BB56ADFB4F09B6D /* Config.swift */; };
+		9166B43B1B98B7238BE491A6601E6EEA /* QuinnsSecondEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A2C13EFEE5073A0C876A349985CCB4 /* QuinnsSecondEstimator.swift */; };
+		95B41F811DCCFBE9313947E4E51CA531 /* AcousticWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A84CE703E4461B2A3E3AE5A6E71F6 /* AcousticWave.swift */; };
+		9B7FC0B360D01BC65B4874D170452DB6 /* Beethoven-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 793C4E56EF3E8098517720695C4E31B0 /* Beethoven-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CF7D980742E7A06AD24343397351F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0575A0FAD39068C92BD30EEECD114D2 /* Foundation.framework */; };
+		9E7E6EB2C6802B276261AA72A47E063D /* Pods-TunerTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20864079E42FE478DF2E3F264135BD4F /* Pods-TunerTest-dummy.m */; };
+		9F2D7F7C31DC7445135B96A04B897793 /* Pods-TunerTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3818321644DB9D839646D3A1F84631 /* Pods-TunerTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A318C257D2CE8A7CB4F2D1571015A919 /* SimpleTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5975835733F1A2942AD054F3BA23B64 /* SimpleTransformer.swift */; };
+		A6EB6E2A64B2D3D44A7E2E435D69DF22 /* Hue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB1CBB062F3A40348D01059ED1309 /* Hue-dummy.m */; };
+		B2F0AC858680635E629C71C6E364A8C7 /* Hue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E790C2CEAC68AF5EF26175FA2C0BF954 /* Hue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5378B78F70B62B0124EFF5873F0CF90 /* Estimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11E3C476FEB60F032DDD6DFCC7DF73 /* Estimator.swift */; };
+		B6215F01AF0C0ADD1C6F0E456C939D24 /* Pitchy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFA750CD0E2A6ABE17D168FDDB178E /* Pitchy-dummy.m */; };
+		B688FE289EC9BE2EFC729F468F3F08E6 /* PitchCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177961D15763C5131500EDB128BAC64 /* PitchCalculator.swift */; };
+		BB10C216D6FBF974B16845252C079232 /* SimulatorSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1132172059B2B6FB51178F40A355A /* SimulatorSignalTracker.swift */; };
+		BEEC0D860AC39BB7C2AEC29C539538B3 /* UIColor+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEF79FB49709A4FD868A411FE899FB /* UIColor+Hue.swift */; };
+		C1D64B44F299C2C23841A565EE47C288 /* SignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C2F4A2002D1608F0A0EC45A900D31 /* SignalTracker.swift */; };
+		C8490E64A0D4FF8AC55E9FC90DB354C8 /* HPSEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802850BE59124472D362FF079E1241F /* HPSEstimator.swift */; };
+		CD856C7FB61F8CBCA77CB7CC33B97A20 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3871CE679B91D210087058F1DC2B06 /* Error.swift */; };
+		CE7309E7C31377AD6FF4149BDDAB4F9F /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA26890D98AF1EDFE8201258F6DF6CA /* Pitch.swift */; };
+		D63FDC8BA1511827DF9AB756B55B2C71 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2644428E4164A2F0B45952862083C7CA /* AVFoundation.framework */; };
+		D7249996D70A3023EAF7193650176641 /* NoteCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D5C047BDAE382E78F00C885E6E3F7D /* NoteCalculator.swift */; };
+		E97D739567D462765EF978B2649F5133 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F7889A4B923E96655BE860ADA0B3C4 /* Buffer.swift */; };
+		F648A8A8BC235F2C2288FB3CA1F12D11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0575A0FAD39068C92BD30EEECD114D2 /* Foundation.framework */; };
+		F7908D3641294CF601ED33CA58799FF2 /* FrequencyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE886744151148B74549EA032BD6D1 /* FrequencyValidator.swift */; };
+		F8726221D8DC8F7C371EBEC052295FAC /* EstimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9691F6B5217FEC72FA58639804D2963 /* EstimationFactory.swift */; };
+		FE8FF517AE5027E4B8CA69D42FF07F75 /* FFTTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965D645E56AE2240870593E525A6BA2 /* FFTTransformer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5AE035FDA5070C3436FF32AE1DDB6D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DF057AD7A09E3239F8A743273F545B1;
+			remoteInfo = Pitchy;
+		};
+		CFA693CD3E8448A206AA8353D49B5CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DF057AD7A09E3239F8A743273F545B1;
+			remoteInfo = Pitchy;
+		};
+		D9C2955113A0CF8F422A91FA2256C54B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D9B51B84230E50370AC70ADCF7F8AA;
+			remoteInfo = Hue;
+		};
+		FD084FDE3018A5527216BD051C5ADBF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6975F226AE2D5E0CE39C1BFC3B796F;
+			remoteInfo = Beethoven;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02051D51224116DB58FBB221EADE0F28 /* MaxValueEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxValueEstimator.swift; path = Source/Estimation/Strategies/MaxValueEstimator.swift; sourceTree = "<group>"; };
+		023234FFBA38CC8477C2FDAC2BAE64B1 /* YINUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YINUtil.swift; path = Source/Library/YINUtil.swift; sourceTree = "<group>"; };
+		0704B7A3B6E410F0D217031F0FD98BB3 /* YINEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YINEstimator.swift; path = Source/Estimation/Strategies/YINEstimator.swift; sourceTree = "<group>"; };
+		08F7889A4B923E96655BE860ADA0B3C4 /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = Source/Library/Buffer.swift; sourceTree = "<group>"; };
+		09DB307FD037DF15CBCC2CBE03B79208 /* LocationEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationEstimator.swift; path = Source/Estimation/LocationEstimator.swift; sourceTree = "<group>"; };
+		0F0E3795B8B6D703801C25260A50D694 /* Hue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hue.debug.xcconfig; sourceTree = "<group>"; };
+		17F1132172059B2B6FB51178F40A355A /* SimulatorSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimulatorSignalTracker.swift; path = Source/SignalTracking/Units/SimulatorSignalTracker.swift; sourceTree = "<group>"; };
+		1F65B4778F31C1D369135C65C45184A1 /* Hue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hue.release.xcconfig; sourceTree = "<group>"; };
+		20864079E42FE478DF2E3F264135BD4F /* Pods-TunerTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TunerTest-dummy.m"; sourceTree = "<group>"; };
+		23BFBC9873CF4A8CEF9924AF317759B7 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2644428E4164A2F0B45952862083C7CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		2965D645E56AE2240870593E525A6BA2 /* FFTTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FFTTransformer.swift; path = Source/Transform/Strategies/FFTTransformer.swift; sourceTree = "<group>"; };
+		2AF572F61ED07481AC1B8C4689CAE758 /* QuinnsFirstEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuinnsFirstEstimator.swift; path = Source/Estimation/Strategies/QuinnsFirstEstimator.swift; sourceTree = "<group>"; };
+		3177961D15763C5131500EDB128BAC64 /* PitchCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchCalculator.swift; path = Source/Calculators/PitchCalculator.swift; sourceTree = "<group>"; };
+		373E1210B48D4A31E4FB7EE4C5DFC558 /* BarycentricEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarycentricEstimator.swift; path = Source/Estimation/Strategies/BarycentricEstimator.swift; sourceTree = "<group>"; };
+		3B3871CE679B91D210087058F1DC2B06 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		4A790E63D2990C15513F33F46273EDC3 /* QuadradicEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadradicEstimator.swift; path = Source/Estimation/Strategies/QuadradicEstimator.swift; sourceTree = "<group>"; };
+		4EA26890D98AF1EDFE8201258F6DF6CA /* Pitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pitch.swift; path = Source/Data/Pitch.swift; sourceTree = "<group>"; };
+		533BF68C28FA8792FF6FF0DD9F62E902 /* Pitchy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pitchy-Info.plist"; sourceTree = "<group>"; };
+		54486F9C048870E5692DB7D915BF1DC2 /* Beethoven.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Beethoven.modulemap; sourceTree = "<group>"; };
+		57ABA6EE8642056AF53091609C217764 /* Beethoven-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Beethoven-Info.plist"; sourceTree = "<group>"; };
+		58A368AE756459F6E6978D6C6F09DE4A /* Hue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Hue.modulemap; sourceTree = "<group>"; };
+		5B6A84CE703E4461B2A3E3AE5A6E71F6 /* AcousticWave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticWave.swift; path = Source/Data/AcousticWave.swift; sourceTree = "<group>"; };
+		5CC1592D611ABCDBF0BCC46B361746A7 /* Pitchy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pitchy.debug.xcconfig; sourceTree = "<group>"; };
+		62FE886744151148B74549EA032BD6D1 /* FrequencyValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrequencyValidator.swift; path = Source/FrequencyValidator.swift; sourceTree = "<group>"; };
+		65377176EF5A2AC55399257945BD1153 /* Pitchy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		664C2F4A2002D1608F0A0EC45A900D31 /* SignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalTracker.swift; path = Source/SignalTracking/SignalTracker.swift; sourceTree = "<group>"; };
+		6757E0FE3889FB3EDEFBFB3300493386 /* Beethoven-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Beethoven-prefix.pch"; sourceTree = "<group>"; };
+		6A520821F275954589A194820212CC47 /* Pitchy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pitchy-prefix.pch"; sourceTree = "<group>"; };
+		6AC761C14587FCEC6648932326D2973B /* Beethoven-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Beethoven-dummy.m"; sourceTree = "<group>"; };
+		6DEEF79FB49709A4FD868A411FE899FB /* UIColor+Hue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Hue.swift"; path = "Source/iOS+tvOS/UIColor+Hue.swift"; sourceTree = "<group>"; };
+		7259AEEC26E8085F5C2FF51167EE5060 /* Pods-TunerTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TunerTest.modulemap"; sourceTree = "<group>"; };
+		793C4E56EF3E8098517720695C4E31B0 /* Beethoven-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Beethoven-umbrella.h"; sourceTree = "<group>"; };
+		7BC4E5EBACC9AF93212186391761BE86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7C3818321644DB9D839646D3A1F84631 /* Pods-TunerTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TunerTest-umbrella.h"; sourceTree = "<group>"; };
+		7C6E338A4315F9C846E47B12E742F1E0 /* Note.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Note.swift; path = Source/Data/Note.swift; sourceTree = "<group>"; };
+		7D6FC986BB4DAAAE4A26F6A6AE085185 /* WaveCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaveCalculator.swift; path = Source/Calculators/WaveCalculator.swift; sourceTree = "<group>"; };
+		829BA5B239338B55AC3E698FC4FAEA32 /* Pitchy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pitchy.release.xcconfig; sourceTree = "<group>"; };
+		8DFFA750CD0E2A6ABE17D168FDDB178E /* Pitchy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pitchy-dummy.m"; sourceTree = "<group>"; };
+		8FADDA97F1504E862F62748F8115AD70 /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Source/Transform/Transformer.swift; sourceTree = "<group>"; };
+		93682035733ED6527583E1B66728471B /* Pitchy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pitchy-umbrella.h"; sourceTree = "<group>"; };
+		94D5C047BDAE382E78F00C885E6E3F7D /* NoteCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoteCalculator.swift; path = Source/Calculators/NoteCalculator.swift; sourceTree = "<group>"; };
+		9AD1C58383387A131F3D908C609E9F8E /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extensions.swift"; path = "Source/Library/Extensions/Array+Extensions.swift"; sourceTree = "<group>"; };
+		9CE85FED47B110F417416554B3A7C20B /* YINTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YINTransformer.swift; path = Source/Transform/Strategies/YINTransformer.swift; sourceTree = "<group>"; };
+		9D7144E1F266C348A71B52EA5D274248 /* EstimationStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationStrategy.swift; path = Source/Estimation/EstimationStrategy.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2A063777316EB6911BAB2A7FE35FFDD /* UIImage+Hue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Hue.swift"; path = "Source/iOS+tvOS/UIImage+Hue.swift"; sourceTree = "<group>"; };
+		A3B9017440BF6211054FE81F7F78BC76 /* Hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5975835733F1A2942AD054F3BA23B64 /* SimpleTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleTransformer.swift; path = Source/Transform/Strategies/SimpleTransformer.swift; sourceTree = "<group>"; };
+		A598B720F511241455755C3BF06EE46E /* Hue-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Hue-Info.plist"; sourceTree = "<group>"; };
+		A5D0F2B01ED5FA4C2F46814F9131C86E /* JainsEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JainsEstimator.swift; path = Source/Estimation/Strategies/JainsEstimator.swift; sourceTree = "<group>"; };
+		A636B64CABE8A1D69FF392A2245A2615 /* Pods-TunerTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TunerTest-frameworks.sh"; sourceTree = "<group>"; };
+		A7A2C13EFEE5073A0C876A349985CCB4 /* QuinnsSecondEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuinnsSecondEstimator.swift; path = Source/Estimation/Strategies/QuinnsSecondEstimator.swift; sourceTree = "<group>"; };
+		AC5D6A5309EE3895554065CBAC62626E /* OutputSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutputSignalTracker.swift; path = Source/SignalTracking/Units/OutputSignalTracker.swift; sourceTree = "<group>"; };
+		B0F0D7325E5DFD1AB025567BE802D818 /* Pods-TunerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TunerTest.release.xcconfig"; sourceTree = "<group>"; };
+		B3EE5125BD37ECC3D7B03E570EE4DD5F /* Pods-TunerTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TunerTest-Info.plist"; sourceTree = "<group>"; };
+		B4413CD8FECD5C5D0F9395DDDBFAE726 /* Hue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hue-prefix.pch"; sourceTree = "<group>"; };
+		B6B9F4C7FE9B0FD5F065A11E6955345F /* Pods-TunerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TunerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B7DCA259F3E9F1973029A839669F8657 /* Pods-TunerTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TunerTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		C469CBF5A62441596CCFA136643A4C54 /* PitchEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchEngine.swift; path = Source/PitchEngine.swift; sourceTree = "<group>"; };
+		CC39FACB8080B61D9456746E2BF9B79C /* InputSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSignalTracker.swift; path = Source/SignalTracking/Units/InputSignalTracker.swift; sourceTree = "<group>"; };
+		D0575A0FAD39068C92BD30EEECD114D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D802850BE59124472D362FF079E1241F /* HPSEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HPSEstimator.swift; path = Source/Estimation/Strategies/HPSEstimator.swift; sourceTree = "<group>"; };
+		DB06F84D70399B61E68D0A3181A1F745 /* Beethoven.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Beethoven.debug.xcconfig; sourceTree = "<group>"; };
+		DD8E7C4D9322DC3F182F575AAF84C748 /* Pitchy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pitchy.modulemap; sourceTree = "<group>"; };
+		DF11E3C476FEB60F032DDD6DFCC7DF73 /* Estimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Estimator.swift; path = Source/Estimation/Estimator.swift; sourceTree = "<group>"; };
+		E06D7FD8E9538D2BE977CED25E7FC32D /* EstimationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationError.swift; path = Source/Estimation/EstimationError.swift; sourceTree = "<group>"; };
+		E790C2CEAC68AF5EF26175FA2C0BF954 /* Hue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hue-umbrella.h"; sourceTree = "<group>"; };
+		E9691F6B5217FEC72FA58639804D2963 /* EstimationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationFactory.swift; path = Source/Estimation/EstimationFactory.swift; sourceTree = "<group>"; };
+		EC9EB1CBB062F3A40348D01059ED1309 /* Hue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hue-dummy.m"; sourceTree = "<group>"; };
+		F198C773209A22F36BB56ADFB4F09B6D /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Source/Config.swift; sourceTree = "<group>"; };
+		F59B76162F1D8E4A4F1E3A3E73F0F163 /* Pods_TunerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TunerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F710AD8FBF481D9D6F1A50E287B5F6F9 /* Beethoven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Beethoven.release.xcconfig; sourceTree = "<group>"; };
+		F9D5AEBF4CC29C79CA506011BD082B96 /* Pods-TunerTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TunerTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FECC0722DC9B657E7A568FB96BCAEF32 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2858D27D0F5DAFFE7824F850D4180C5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F648A8A8BC235F2C2288FB3CA1F12D11 /* Foundation.framework in Frameworks */,
+				0E33A56AD4094E3DFB668CB8C888B34F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8E9E0452AB882447545A4F9344378C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506B0DBF597DA7C6F062C4E2C5F145F6 /* Accelerate.framework in Frameworks */,
+				D63FDC8BA1511827DF9AB756B55B2C71 /* AVFoundation.framework in Frameworks */,
+				18940758DC199ABD054234809EEB7531 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBDF11D8DF035EE3640AA553CC5FB8C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF7D980742E7A06AD24343397351F5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96E998EB70D18DDB0EE83CA30A8C914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E2949FB8A4F44D98A07BF1133FB7DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09A467610CBF6F323500D2E7632B181F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD8E7C4D9322DC3F182F575AAF84C748 /* Pitchy.modulemap */,
+				8DFFA750CD0E2A6ABE17D168FDDB178E /* Pitchy-dummy.m */,
+				533BF68C28FA8792FF6FF0DD9F62E902 /* Pitchy-Info.plist */,
+				6A520821F275954589A194820212CC47 /* Pitchy-prefix.pch */,
+				93682035733ED6527583E1B66728471B /* Pitchy-umbrella.h */,
+				5CC1592D611ABCDBF0BCC46B361746A7 /* Pitchy.debug.xcconfig */,
+				829BA5B239338B55AC3E698FC4FAEA32 /* Pitchy.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pitchy";
+			sourceTree = "<group>";
+		};
+		175EE547E76887DA306F7BEB7690A5FC /* Hue */ = {
+			isa = PBXGroup;
+			children = (
+				6DEEF79FB49709A4FD868A411FE899FB /* UIColor+Hue.swift */,
+				A2A063777316EB6911BAB2A7FE35FFDD /* UIImage+Hue.swift */,
+				178773777AD2C918602DB7EE859DF3BA /* Support Files */,
+			);
+			path = Hue;
+			sourceTree = "<group>";
+		};
+		178773777AD2C918602DB7EE859DF3BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58A368AE756459F6E6978D6C6F09DE4A /* Hue.modulemap */,
+				EC9EB1CBB062F3A40348D01059ED1309 /* Hue-dummy.m */,
+				A598B720F511241455755C3BF06EE46E /* Hue-Info.plist */,
+				B4413CD8FECD5C5D0F9395DDDBFAE726 /* Hue-prefix.pch */,
+				E790C2CEAC68AF5EF26175FA2C0BF954 /* Hue-umbrella.h */,
+				0F0E3795B8B6D703801C25260A50D694 /* Hue.debug.xcconfig */,
+				1F65B4778F31C1D369135C65C45184A1 /* Hue.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Hue";
+			sourceTree = "<group>";
+		};
+		1EADCE1051FF545DA8B3EF9D8F474348 /* Beethoven */ = {
+			isa = PBXGroup;
+			children = (
+				9AD1C58383387A131F3D908C609E9F8E /* Array+Extensions.swift */,
+				373E1210B48D4A31E4FB7EE4C5DFC558 /* BarycentricEstimator.swift */,
+				08F7889A4B923E96655BE860ADA0B3C4 /* Buffer.swift */,
+				F198C773209A22F36BB56ADFB4F09B6D /* Config.swift */,
+				E06D7FD8E9538D2BE977CED25E7FC32D /* EstimationError.swift */,
+				E9691F6B5217FEC72FA58639804D2963 /* EstimationFactory.swift */,
+				9D7144E1F266C348A71B52EA5D274248 /* EstimationStrategy.swift */,
+				DF11E3C476FEB60F032DDD6DFCC7DF73 /* Estimator.swift */,
+				2965D645E56AE2240870593E525A6BA2 /* FFTTransformer.swift */,
+				D802850BE59124472D362FF079E1241F /* HPSEstimator.swift */,
+				CC39FACB8080B61D9456746E2BF9B79C /* InputSignalTracker.swift */,
+				A5D0F2B01ED5FA4C2F46814F9131C86E /* JainsEstimator.swift */,
+				09DB307FD037DF15CBCC2CBE03B79208 /* LocationEstimator.swift */,
+				02051D51224116DB58FBB221EADE0F28 /* MaxValueEstimator.swift */,
+				AC5D6A5309EE3895554065CBAC62626E /* OutputSignalTracker.swift */,
+				C469CBF5A62441596CCFA136643A4C54 /* PitchEngine.swift */,
+				4A790E63D2990C15513F33F46273EDC3 /* QuadradicEstimator.swift */,
+				2AF572F61ED07481AC1B8C4689CAE758 /* QuinnsFirstEstimator.swift */,
+				A7A2C13EFEE5073A0C876A349985CCB4 /* QuinnsSecondEstimator.swift */,
+				664C2F4A2002D1608F0A0EC45A900D31 /* SignalTracker.swift */,
+				A5975835733F1A2942AD054F3BA23B64 /* SimpleTransformer.swift */,
+				17F1132172059B2B6FB51178F40A355A /* SimulatorSignalTracker.swift */,
+				8FADDA97F1504E862F62748F8115AD70 /* Transformer.swift */,
+				0704B7A3B6E410F0D217031F0FD98BB3 /* YINEstimator.swift */,
+				9CE85FED47B110F417416554B3A7C20B /* YINTransformer.swift */,
+				023234FFBA38CC8477C2FDAC2BAE64B1 /* YINUtil.swift */,
+				7E24166AEFD6BB8C34FD07589C4751D3 /* Support Files */,
+			);
+			path = Beethoven;
+			sourceTree = "<group>";
+		};
+		2F69E4EE651951131B55D9CD7BE41E8D /* Pods-TunerTest */ = {
+			isa = PBXGroup;
+			children = (
+				7259AEEC26E8085F5C2FF51167EE5060 /* Pods-TunerTest.modulemap */,
+				F9D5AEBF4CC29C79CA506011BD082B96 /* Pods-TunerTest-acknowledgements.markdown */,
+				B7DCA259F3E9F1973029A839669F8657 /* Pods-TunerTest-acknowledgements.plist */,
+				20864079E42FE478DF2E3F264135BD4F /* Pods-TunerTest-dummy.m */,
+				A636B64CABE8A1D69FF392A2245A2615 /* Pods-TunerTest-frameworks.sh */,
+				B3EE5125BD37ECC3D7B03E570EE4DD5F /* Pods-TunerTest-Info.plist */,
+				7C3818321644DB9D839646D3A1F84631 /* Pods-TunerTest-umbrella.h */,
+				B6B9F4C7FE9B0FD5F065A11E6955345F /* Pods-TunerTest.debug.xcconfig */,
+				B0F0D7325E5DFD1AB025567BE802D818 /* Pods-TunerTest.release.xcconfig */,
+			);
+			name = "Pods-TunerTest";
+			path = "Target Support Files/Pods-TunerTest";
+			sourceTree = "<group>";
+		};
+		7E24166AEFD6BB8C34FD07589C4751D3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54486F9C048870E5692DB7D915BF1DC2 /* Beethoven.modulemap */,
+				6AC761C14587FCEC6648932326D2973B /* Beethoven-dummy.m */,
+				57ABA6EE8642056AF53091609C217764 /* Beethoven-Info.plist */,
+				6757E0FE3889FB3EDEFBFB3300493386 /* Beethoven-prefix.pch */,
+				793C4E56EF3E8098517720695C4E31B0 /* Beethoven-umbrella.h */,
+				DB06F84D70399B61E68D0A3181A1F745 /* Beethoven.debug.xcconfig */,
+				F710AD8FBF481D9D6F1A50E287B5F6F9 /* Beethoven.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Beethoven";
+			sourceTree = "<group>";
+		};
+		A114938C7C45400E9F541F2EBE2595C3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F69E4EE651951131B55D9CD7BE41E8D /* Pods-TunerTest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD958FA71D8604575905823725C39D91 /* Pitchy */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A84CE703E4461B2A3E3AE5A6E71F6 /* AcousticWave.swift */,
+				3B3871CE679B91D210087058F1DC2B06 /* Error.swift */,
+				62FE886744151148B74549EA032BD6D1 /* FrequencyValidator.swift */,
+				7C6E338A4315F9C846E47B12E742F1E0 /* Note.swift */,
+				94D5C047BDAE382E78F00C885E6E3F7D /* NoteCalculator.swift */,
+				4EA26890D98AF1EDFE8201258F6DF6CA /* Pitch.swift */,
+				3177961D15763C5131500EDB128BAC64 /* PitchCalculator.swift */,
+				7D6FC986BB4DAAAE4A26F6A6AE085185 /* WaveCalculator.swift */,
+				09A467610CBF6F323500D2E7632B181F /* Support Files */,
+			);
+			path = Pitchy;
+			sourceTree = "<group>";
+		};
+		B4174DA8F529A229687DB2B3E2AC6F4F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FECC0722DC9B657E7A568FB96BCAEF32 /* Accelerate.framework */,
+				2644428E4164A2F0B45952862083C7CA /* AVFoundation.framework */,
+				D0575A0FAD39068C92BD30EEECD114D2 /* Foundation.framework */,
+				7BC4E5EBACC9AF93212186391761BE86 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4174DA8F529A229687DB2B3E2AC6F4F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				F558DCABF8C5464A6438423C146E5DE6 /* Pods */,
+				F81403A45CC268F6CD35158994C3C27C /* Products */,
+				A114938C7C45400E9F541F2EBE2595C3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F558DCABF8C5464A6438423C146E5DE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EADCE1051FF545DA8B3EF9D8F474348 /* Beethoven */,
+				175EE547E76887DA306F7BEB7690A5FC /* Hue */,
+				AD958FA71D8604575905823725C39D91 /* Pitchy */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F81403A45CC268F6CD35158994C3C27C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23BFBC9873CF4A8CEF9924AF317759B7 /* Beethoven.framework */,
+				A3B9017440BF6211054FE81F7F78BC76 /* Hue.framework */,
+				65377176EF5A2AC55399257945BD1153 /* Pitchy.framework */,
+				F59B76162F1D8E4A4F1E3A3E73F0F163 /* Pods_TunerTest.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1291FBC3FD2C53B468E2D927DEF11F33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7FC0B360D01BC65B4874D170452DB6 /* Beethoven-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC648C0BF4E311764EADF4A45446FE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBDC09A0BE1E80ABCA54E192D2A6851 /* Pitchy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6804DDCCD0A3AB3DF424E90729A23357 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2D7F7C31DC7445135B96A04B897793 /* Pods-TunerTest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EC9D73C0D98E16E7BA8FC064FD140F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F0AC858680635E629C71C6E364A8C7 /* Hue-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00D9B51B84230E50370AC70ADCF7F8AA /* Hue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712497DC0A275AA8087D18D369DDCDE8 /* Build configuration list for PBXNativeTarget "Hue" */;
+			buildPhases = (
+				D4EC9D73C0D98E16E7BA8FC064FD140F /* Headers */,
+				0AD5B4DDD688F55D59F7ADECA599473A /* Sources */,
+				2858D27D0F5DAFFE7824F850D4180C5F /* Frameworks */,
+				C2059B99D6CC805E8ABC8A8FCC7155A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hue;
+			productName = Hue;
+			productReference = A3B9017440BF6211054FE81F7F78BC76 /* Hue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		03F88362358AF9C6A60A919B8BD93284 /* Pods-TunerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF75B5F2F294896DACE6522EBFAECEB9 /* Build configuration list for PBXNativeTarget "Pods-TunerTest" */;
+			buildPhases = (
+				6804DDCCD0A3AB3DF424E90729A23357 /* Headers */,
+				B0CBD8DED3C4770DC49728D09153DC9C /* Sources */,
+				BBDF11D8DF035EE3640AA553CC5FB8C4 /* Frameworks */,
+				C3C42A4EE29410C3086931AA0B35D3E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C48D9151444123D7E3518996CAC6AA3D /* PBXTargetDependency */,
+				6D9B056C35075840540E70D0C693156A /* PBXTargetDependency */,
+				D14881A1E161A4C85730803E70D5D436 /* PBXTargetDependency */,
+			);
+			name = "Pods-TunerTest";
+			productName = Pods_TunerTest;
+			productReference = F59B76162F1D8E4A4F1E3A3E73F0F163 /* Pods_TunerTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DF057AD7A09E3239F8A743273F545B1 /* Pitchy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 763CDF7EB0A03A992A07A2F0A4A2E5FD /* Build configuration list for PBXNativeTarget "Pitchy" */;
+			buildPhases = (
+				5CC648C0BF4E311764EADF4A45446FE7 /* Headers */,
+				8408E60CB202837BEB6049D40102DF76 /* Sources */,
+				E96E998EB70D18DDB0EE83CA30A8C914 /* Frameworks */,
+				54983546A8772AD7659B768E38DE334C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pitchy;
+			productName = Pitchy;
+			productReference = 65377176EF5A2AC55399257945BD1153 /* Pitchy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA6975F226AE2D5E0CE39C1BFC3B796F /* Beethoven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 007FFC3346D504C5849AA31F87623118 /* Build configuration list for PBXNativeTarget "Beethoven" */;
+			buildPhases = (
+				1291FBC3FD2C53B468E2D927DEF11F33 /* Headers */,
+				8F4AF716E1A131215E19A320406D4DF4 /* Sources */,
+				6D8E9E0452AB882447545A4F9344378C /* Frameworks */,
+				9F9F0A96898E3F39DE498D53F6E2BA8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D576CBC9EF8623DB4317706A61AD2FAD /* PBXTargetDependency */,
+			);
+			name = Beethoven;
+			productName = Beethoven;
+			productReference = 23BFBC9873CF4A8CEF9924AF317759B7 /* Beethoven.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F81403A45CC268F6CD35158994C3C27C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA6975F226AE2D5E0CE39C1BFC3B796F /* Beethoven */,
+				00D9B51B84230E50370AC70ADCF7F8AA /* Hue */,
+				7DF057AD7A09E3239F8A743273F545B1 /* Pitchy */,
+				03F88362358AF9C6A60A919B8BD93284 /* Pods-TunerTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54983546A8772AD7659B768E38DE334C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9F0A96898E3F39DE498D53F6E2BA8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2059B99D6CC805E8ABC8A8FCC7155A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C42A4EE29410C3086931AA0B35D3E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AD5B4DDD688F55D59F7ADECA599473A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EB6E2A64B2D3D44A7E2E435D69DF22 /* Hue-dummy.m in Sources */,
+				BEEC0D860AC39BB7C2AEC29C539538B3 /* UIColor+Hue.swift in Sources */,
+				4F50C4935977A5DDDF15959947BA21A1 /* UIImage+Hue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8408E60CB202837BEB6049D40102DF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B41F811DCCFBE9313947E4E51CA531 /* AcousticWave.swift in Sources */,
+				CD856C7FB61F8CBCA77CB7CC33B97A20 /* Error.swift in Sources */,
+				F7908D3641294CF601ED33CA58799FF2 /* FrequencyValidator.swift in Sources */,
+				7B836AEF45B51DA7A045E56B4C8C9E68 /* Note.swift in Sources */,
+				D7249996D70A3023EAF7193650176641 /* NoteCalculator.swift in Sources */,
+				CE7309E7C31377AD6FF4149BDDAB4F9F /* Pitch.swift in Sources */,
+				B688FE289EC9BE2EFC729F468F3F08E6 /* PitchCalculator.swift in Sources */,
+				B6215F01AF0C0ADD1C6F0E456C939D24 /* Pitchy-dummy.m in Sources */,
+				56E9E942A25A067E3FE8E324163A02FC /* WaveCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F4AF716E1A131215E19A320406D4DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE7314CFFE1AD4B860B751902708968 /* Array+Extensions.swift in Sources */,
+				11D7F16C0600F38A7EF96B207E7862F0 /* BarycentricEstimator.swift in Sources */,
+				6089525E047EEA75ABBE673386C2631C /* Beethoven-dummy.m in Sources */,
+				E97D739567D462765EF978B2649F5133 /* Buffer.swift in Sources */,
+				90966FE23ECF4122BBCE6A86914FD5EE /* Config.swift in Sources */,
+				13F12F0E10761E4DF4431EEEEF1A0FAF /* EstimationError.swift in Sources */,
+				F8726221D8DC8F7C371EBEC052295FAC /* EstimationFactory.swift in Sources */,
+				7395BCC2D83815DE32A17F7993019856 /* EstimationStrategy.swift in Sources */,
+				B5378B78F70B62B0124EFF5873F0CF90 /* Estimator.swift in Sources */,
+				FE8FF517AE5027E4B8CA69D42FF07F75 /* FFTTransformer.swift in Sources */,
+				C8490E64A0D4FF8AC55E9FC90DB354C8 /* HPSEstimator.swift in Sources */,
+				4FE061CDF2D25CFA6260C3F687A92D04 /* InputSignalTracker.swift in Sources */,
+				7E8624DC5610FB770F183CC61F2BEF98 /* JainsEstimator.swift in Sources */,
+				1A9AA34F16281FABC0D56E35F467E06B /* LocationEstimator.swift in Sources */,
+				8022D5F9DC040D6281D168DF192E0152 /* MaxValueEstimator.swift in Sources */,
+				7736AEDEBDCCA09194799C4C6670FE3D /* OutputSignalTracker.swift in Sources */,
+				48BFACADD277CBAA1DB13C9E97D6A0C2 /* PitchEngine.swift in Sources */,
+				5685A858CB9F1729E5F92C668DD5D70F /* QuadradicEstimator.swift in Sources */,
+				651D2FC1E817A7E9372A32E86B7E1C78 /* QuinnsFirstEstimator.swift in Sources */,
+				9166B43B1B98B7238BE491A6601E6EEA /* QuinnsSecondEstimator.swift in Sources */,
+				C1D64B44F299C2C23841A565EE47C288 /* SignalTracker.swift in Sources */,
+				A318C257D2CE8A7CB4F2D1571015A919 /* SimpleTransformer.swift in Sources */,
+				BB10C216D6FBF974B16845252C079232 /* SimulatorSignalTracker.swift in Sources */,
+				5BFC9D4D2CF65605F89C763BA800C2FA /* Transformer.swift in Sources */,
+				4271DAA7A5DCB43B93EAB086A2373C5A /* YINEstimator.swift in Sources */,
+				89F1A83E76B64BA81060D9147C5B69E8 /* YINTransformer.swift in Sources */,
+				164949BE174563F9CBE616047E337B53 /* YINUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0CBD8DED3C4770DC49728D09153DC9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7E6EB2C6802B276261AA72A47E063D /* Pods-TunerTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D9B056C35075840540E70D0C693156A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Hue;
+			target = 00D9B51B84230E50370AC70ADCF7F8AA /* Hue */;
+			targetProxy = D9C2955113A0CF8F422A91FA2256C54B /* PBXContainerItemProxy */;
+		};
+		C48D9151444123D7E3518996CAC6AA3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Beethoven;
+			target = CA6975F226AE2D5E0CE39C1BFC3B796F /* Beethoven */;
+			targetProxy = FD084FDE3018A5527216BD051C5ADBF5 /* PBXContainerItemProxy */;
+		};
+		D14881A1E161A4C85730803E70D5D436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitchy;
+			target = 7DF057AD7A09E3239F8A743273F545B1 /* Pitchy */;
+			targetProxy = CFA693CD3E8448A206AA8353D49B5CFB /* PBXContainerItemProxy */;
+		};
+		D576CBC9EF8623DB4317706A61AD2FAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitchy;
+			target = 7DF057AD7A09E3239F8A743273F545B1 /* Pitchy */;
+			targetProxy = C5AE035FDA5070C3436FF32AE1DDB6D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2889478BAB3E4178EF8EAF8ACE070E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 829BA5B239338B55AC3E698FC4FAEA32 /* Pitchy.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pitchy/Pitchy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pitchy/Pitchy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pitchy/Pitchy.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = Pitchy;
+				PRODUCT_NAME = Pitchy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		36C1D36DED6FA454FE2466E1BB414BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC1592D611ABCDBF0BCC46B361746A7 /* Pitchy.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pitchy/Pitchy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pitchy/Pitchy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pitchy/Pitchy.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = Pitchy;
+				PRODUCT_NAME = Pitchy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CE4328C52A258793B167DB2CF8F21F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F0E3795B8B6D703801C25260A50D694 /* Hue.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hue/Hue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hue/Hue-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Hue/Hue.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = Hue;
+				PRODUCT_NAME = Hue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7145D554C3961C29AF5BBBCC307065CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB06F84D70399B61E68D0A3181A1F745 /* Beethoven.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Beethoven/Beethoven-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Beethoven/Beethoven-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Beethoven/Beethoven.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = Beethoven;
+				PRODUCT_NAME = Beethoven;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FF7118A493501D89259B7B4CA550043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F710AD8FBF481D9D6F1A50E287B5F6F9 /* Beethoven.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Beethoven/Beethoven-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Beethoven/Beethoven-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Beethoven/Beethoven.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = Beethoven;
+				PRODUCT_NAME = Beethoven;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2D3DF07E92F46A459202244D92D98F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B9F4C7FE9B0FD5F065A11E6955345F /* Pods-TunerTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TunerTest/Pods-TunerTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TunerTest/Pods-TunerTest.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A63723C25A7410D998C5F07A3DCBB22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F0D7325E5DFD1AB025567BE802D818 /* Pods-TunerTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TunerTest/Pods-TunerTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TunerTest/Pods-TunerTest.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F44674D59522E9C05CD89CEFBA704828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F65B4778F31C1D369135C65C45184A1 /* Hue.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hue/Hue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hue/Hue-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Hue/Hue.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = Hue;
+				PRODUCT_NAME = Hue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		007FFC3346D504C5849AA31F87623118 /* Build configuration list for PBXNativeTarget "Beethoven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7145D554C3961C29AF5BBBCC307065CB /* Debug */,
+				7FF7118A493501D89259B7B4CA550043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712497DC0A275AA8087D18D369DDCDE8 /* Build configuration list for PBXNativeTarget "Hue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE4328C52A258793B167DB2CF8F21F6 /* Debug */,
+				F44674D59522E9C05CD89CEFBA704828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		763CDF7EB0A03A992A07A2F0A4A2E5FD /* Build configuration list for PBXNativeTarget "Pitchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C1D36DED6FA454FE2466E1BB414BA1 /* Debug */,
+				2889478BAB3E4178EF8EAF8ACE070E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF75B5F2F294896DACE6522EBFAECEB9 /* Build configuration list for PBXNativeTarget "Pods-TunerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D3DF07E92F46A459202244D92D98F2 /* Debug */,
+				A63723C25A7410D998C5F07A3DCBB22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

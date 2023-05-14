@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-TunerTest/Pods-TunerTest-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Beethoven/Beethoven.framework
+${BUILT_PRODUCTS_DIR}/Hue/Hue.framework
+${BUILT_PRODUCTS_DIR}/Pitchy/Pitchy.framework
