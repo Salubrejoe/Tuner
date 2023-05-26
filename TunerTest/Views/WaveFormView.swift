@@ -13,15 +13,13 @@ struct WaveFormView: View {
     ZStack {
       ForEach(0..<5) { i in
         Wave(amplitude: amplitude, frequency: frequency, phase: self.phase)
-          .stroke(waveColor.opacity(Double(i)/abs(echoes/3)), lineWidth: 5)
+          .stroke(waveColor.opacity((Double(i)/abs(echoes))), lineWidth: 2)
           .offset(y: -CGFloat(i) * CGFloat(echoes))
       }
       .mask {
         LinearGradient(gradient: Gradient(colors: [.clear, .white, . clear]), startPoint: .leading, endPoint: .trailing)
       }
     }
-    .background(.clear)
-    .ignoresSafeArea()
     .onAppear {
       withAnimation(Animation.linear(duration: 1).repeatForever(autoreverses: false)) {
         self.phase = .pi * 2
@@ -33,16 +31,17 @@ struct WaveFormView: View {
 struct WaveFormView_Previews: PreviewProvider {
   static var previews: some View {
     ZStack {
-      WaveFormView(amplitude: 30,
-                   frequency: 445,
-                   waveColor: .red,
-                   echoes: 40)
-      WaveFormView(amplitude: 30,
-                   frequency: 440,
-                   waveColor: .blue,
+      
+      WaveFormView(amplitude: 10,
+                   frequency: 110,
+                   waveColor: .secondary,
                    echoes: 1)
-      .offset(y: 0)
+      WaveFormView(amplitude: 10,
+                   frequency: 170,
+                   waveColor: .secondary,
+                   echoes: 1)
       
     }//: Waves
+    .opacity(0.2)
   }
 }
