@@ -8,25 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		5C95C43FF0BF04A6F0E6DE87 /* Pods_TunerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8B468D14261004FF03ADB0 /* Pods_TunerTest.framework */; };
-		7C1D9AB429F13F6300A2B312 /* GradientTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D9AB329F13F6300A2B312 /* GradientTestView.swift */; };
 		7CB20DF929F127DC0030424D /* TunerTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20DF829F127DC0030424D /* TunerTestApp.swift */; };
-		7CB20DFB29F127DC0030424D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20DFA29F127DC0030424D /* ContentView.swift */; };
+		7CB20DFB29F127DC0030424D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20DFA29F127DC0030424D /* MainView.swift */; };
 		7CB20DFD29F127DE0030424D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB20DFC29F127DE0030424D /* Assets.xcassets */; };
 		7CB20E0029F127DE0030424D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB20DFF29F127DE0030424D /* Preview Assets.xcassets */; };
-		7CB20E0729F12E550030424D /* PitchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20E0629F12E550030424D /* PitchManager.swift */; };
+		7CB20E0729F12E550030424D /* PitchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20E0629F12E550030424D /* PitchData.swift */; };
+		7CEB26CE2A209D4900FCD9BC /* WaveFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEB26CD2A209D4800FCD9BC /* WaveFormView.swift */; };
+		7CEB26D22A20AF4A00FCD9BC /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEB26D12A20AF4A00FCD9BC /* NotesView.swift */; };
+		7CEB26D72A20BCFD00FCD9BC /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEB26D62A20BCFD00FCD9BC /* Wave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		335DC8231C122206EE0E078A /* Pods-TunerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunerTest.debug.xcconfig"; path = "Target Support Files/Pods-TunerTest/Pods-TunerTest.debug.xcconfig"; sourceTree = "<group>"; };
 		5B8B468D14261004FF03ADB0 /* Pods_TunerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TunerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E1F7C6A44FAE2335118AA0 /* Pods-TunerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunerTest.release.xcconfig"; path = "Target Support Files/Pods-TunerTest/Pods-TunerTest.release.xcconfig"; sourceTree = "<group>"; };
-		7C1D9AB329F13F6300A2B312 /* GradientTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTestView.swift; sourceTree = "<group>"; };
 		7CB20DF529F127DC0030424D /* TunerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TunerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB20DF829F127DC0030424D /* TunerTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerTestApp.swift; sourceTree = "<group>"; };
-		7CB20DFA29F127DC0030424D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7CB20DFA29F127DC0030424D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7CB20DFC29F127DE0030424D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CB20DFF29F127DE0030424D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7CB20E0629F12E550030424D /* PitchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchManager.swift; sourceTree = "<group>"; };
+		7CB20E0629F12E550030424D /* PitchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchData.swift; sourceTree = "<group>"; };
+		7CEB26CD2A209D4800FCD9BC /* WaveFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveFormView.swift; sourceTree = "<group>"; };
+		7CEB26D12A20AF4A00FCD9BC /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		7CEB26D62A20BCFD00FCD9BC /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				7CB20DF829F127DC0030424D /* TunerTestApp.swift */,
-				7CB20DFA29F127DC0030424D /* ContentView.swift */,
-				7CB20DFC29F127DE0030424D /* Assets.xcassets */,
+				7CEB26D42A20BC7300FCD9BC /* Views */,
+				7CEB26D52A20BC7E00FCD9BC /* Models */,
 				7CB20DFE29F127DE0030424D /* Preview Content */,
-				7CB20E0629F12E550030424D /* PitchManager.swift */,
-				7C1D9AB329F13F6300A2B312 /* GradientTestView.swift */,
+				7CEB26D32A20BC2C00FCD9BC /* Support Files */,
 			);
 			path = TunerTest;
 			sourceTree = "<group>";
@@ -87,6 +90,33 @@
 				7CB20DFF29F127DE0030424D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7CEB26D32A20BC2C00FCD9BC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CB20DFC29F127DE0030424D /* Assets.xcassets */,
+				7CEB26D12A20AF4A00FCD9BC /* NotesView.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		7CEB26D42A20BC7300FCD9BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CB20DFA29F127DC0030424D /* MainView.swift */,
+				7CEB26CD2A209D4800FCD9BC /* WaveFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CEB26D52A20BC7E00FCD9BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CB20E0629F12E550030424D /* PitchData.swift */,
+				7CEB26D62A20BCFD00FCD9BC /* Wave.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		AD2D390C55D6B2F18E321F40 /* Frameworks */ = {
@@ -211,9 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB20E0729F12E550030424D /* PitchManager.swift in Sources */,
-				7CB20DFB29F127DC0030424D /* ContentView.swift in Sources */,
-				7C1D9AB429F13F6300A2B312 /* GradientTestView.swift in Sources */,
+				7CEB26D72A20BCFD00FCD9BC /* Wave.swift in Sources */,
+				7CEB26D22A20AF4A00FCD9BC /* NotesView.swift in Sources */,
+				7CB20E0729F12E550030424D /* PitchData.swift in Sources */,
+				7CB20DFB29F127DC0030424D /* MainView.swift in Sources */,
+				7CEB26CE2A209D4900FCD9BC /* WaveFormView.swift in Sources */,
 				7CB20DF929F127DC0030424D /* TunerTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

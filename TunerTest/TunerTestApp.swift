@@ -11,7 +11,7 @@ import SwiftUI
 struct TunerTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
