@@ -7,14 +7,14 @@ struct WaveFormView: View {
   let amplitude: Double
   let frequency: Double
   let waveColor: Color
-  let echoes: Int
+  let echoes: Double
   
   var body: some View {
     ZStack {
       ForEach(0..<5) { i in
         Wave(amplitude: amplitude, frequency: frequency, phase: self.phase)
-          .stroke(waveColor.opacity(Double(i)/Double(echoes)), lineWidth: 5)
-          .offset(y: CGFloat(i) * CGFloat(echoes*2))
+          .stroke(waveColor.opacity(Double(i)/abs(echoes/3)), lineWidth: 5)
+          .offset(y: -CGFloat(i) * CGFloat(echoes))
       }
       .mask {
         LinearGradient(gradient: Gradient(colors: [.clear, .white, . clear]), startPoint: .leading, endPoint: .trailing)
@@ -32,9 +32,17 @@ struct WaveFormView: View {
 
 struct WaveFormView_Previews: PreviewProvider {
   static var previews: some View {
-    WaveFormView(amplitude: 50,
-                 frequency: 440,
-                 waveColor: .primary,
-                 echoes: 4)
+    ZStack {
+      WaveFormView(amplitude: 30,
+                   frequency: 445,
+                   waveColor: .red,
+                   echoes: 40)
+      WaveFormView(amplitude: 30,
+                   frequency: 440,
+                   waveColor: .blue,
+                   echoes: 1)
+      .offset(y: 0)
+      
+    }//: Waves
   }
 }

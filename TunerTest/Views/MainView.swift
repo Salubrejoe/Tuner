@@ -25,25 +25,44 @@ struct MainView: View {
         VStack {
           
           // LETTER
-          Spacer()
-          Text(controller.pitchString)
-            .font(.system(size: 100))
+//          Spacer()
+          VStack {
+            if isPlaying() {
+              Text(controller.pitchString)
+                .font(.system(size: 100))
+            } else {
+              Text("Ready")
+                .font(.system(size: 50))
+              Text("to listen")
+                .font(.system(size: 50))
+            }
+          }
+          .frame(maxWidth: .infinity)
+          .frame(maxHeight: 300)
+          
+          
           
           // WAVES
           ZStack {
+            if isPlaying() {
               WaveFormView(amplitude: 30,
                            frequency: controller.pitchFrequency,
-                           waveColor: controller.isTuned ? .green : .primary,
-                           echoes: 5)
+                           waveColor: controller.isTuned ? .green : .red,
+                           echoes: controller.offsetCents)
               WaveFormView(amplitude: 30,
                            frequency: controller.closestOffsetFrequency,
-                           waveColor: controller.isTuned ? .green : .red,
+                           waveColor: .primary,
                            echoes: 1)
-              .offset(y: controller.offsetCents)
+            } else {
+              WaveFormView(amplitude: 30,
+                           frequency: 440,
+                           waveColor: .secondary,
+                           echoes: 30)
+            }
             
           }//: Waves
-          
-          Spacer()
+          .frame(maxWidth: .infinity)
+          .frame(maxHeight: 400)
         }
       
       
@@ -53,6 +72,10 @@ struct MainView: View {
       pitchEngine.levelThreshold = -30.0
       DispatchQueue.main.async { pitchEngine.start() }
     }
+  }
+  
+  func isPlaying() -> Bool {
+    pitchEngine.signalLevel > -27
   }
 }
 
